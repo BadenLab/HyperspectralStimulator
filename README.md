@@ -60,6 +60,8 @@ Potentiometers & Resistors as required.
 
 It is possible to extend the construction to achieve moving hyperspectral centre-surround stimulation.
 
+<img src="/Images/CSPrototype.jpg" width="256">
+
 The idea behind centre-surround is as follows:
 1. Modulate the stimulation spectrum with a high frequency
 2. Add an ETL (Electric Focus-Tunable Lens) into the post-fibre lightpath
@@ -73,4 +75,14 @@ Movement of the stimulus is achieved via a system of spectrally flat mirrors, dr
 
 The Arduino software already allows you to move the stimulus.
 
-Hardware and 3D-prints in respective folder.
+# Hardware required for Centre-Surround and movement improvements:
+
+SparkFun Joystick Shield Kit: https://www.sparkfun.com/products/9760
+
+Mirrors used: UV enhanced Thorlabs mirrors
+https://www.thorlabs.com/thorproduct.cfm?partnumber=PFSQ05-03-F01
+https://www.thorlabs.com/thorproduct.cfm?partnumber=PFSQ10-03-F01
+
+To hold the optics we used:
+SWC/M - Rotating Clamp for Ø1/2" Posts, 360° Continuously Adjustable, 5 mm Hex 
+https://www.thorlabs.com/thorproduct.cfm?partnumber=SWC/M

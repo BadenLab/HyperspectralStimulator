@@ -1,13 +1,16 @@
-# HyperspectralStimulator
+# Hyperspectral Stimulator
+
+_Philipp Bartel & Filip Janiak for BadenLab_
+
 Hardware description and software (Arduino and Python) for the hyperspectral stimulator (a.k.a. Skittles) adapted from:
 
-Belušič, G., Ilić, M., Meglič, A., & Pirih, P. (2016). A fast multispectral light synthesiser based on LEDs and a diffraction grating. Scientific reports, 6, 32012.
+Belušič, G., Ilić, M., Meglič, A., & Pirih, P. (2016). _A fast multispectral light synthesiser based on LEDs and a diffraction grating._ Scientific reports, 6, 32012.
 
-Boring...
+The stimulator goes from boring...
 
 <img src="/Images/OFF.jpg" width="256">
 
-Presto!
+to Presto!
 
 <img src="/Images/ON.jpg" width="256">
 
@@ -32,17 +35,24 @@ How does it work?
 
 Lightguide:
 https://www.newport.com/p/77555
+The lightguide used has the following transmission characteristics:
+
+<img src="https://www.newport.com/mam/celum/celum_assets/LS-254b_600w.gif?6" width="512">
+
+To allow UV light to pass through the stimulation setup a liquid lightguide is preferred due to its high transmissivity in the short wavelength (UV) domain.
 
 LEDs:
-In respective folder
+Full list used lies in the respective folder. The LEDs were ordered from Roithner Lasertechnik (http://www.roithner-laser.com/).
 
-Rails
+Optical rails - to hold the LEDs.
 
-Arduino Due - perhaps best replaced with and EPS Feather
+Microcontroller:
+Arduino Due - perhaps best replaced with an EPS Feather. The Arduino code was only tested with the 1st edition of the Arduino Due.
 
-Adafruit 24 Channel PWM board
+LED driver:
+TLC5947 Adafruit 24-Channel 12-bit PWM LED Driver (https://www.adafruit.com/product/1429)
 
-Potentiometers
+Potentiometers & Resistors as required.
 
 3D-prints
 

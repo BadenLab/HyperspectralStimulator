@@ -27,3 +27,40 @@ How does it work?
 4. This 'counter' signal comes into an Arduino /interrupt/ pin. When the signal comes through, LED pwm values are updated.
 5. The user provides a matrix of the form [number of LEDs x stimulus frames], as well as a vector of [frame durations in n('counter' pulses)].
 6. The setup also produces a 'Trigger' signal. Since it is synchronised with the stimulus procession, it is great for aligning stimulus to the recording trace
+
+# Hardware
+
+Lightguide:
+https://www.newport.com/p/77555
+
+LEDs:
+In respective folder
+
+Rails
+
+Arduino Due - perhaps best replaced with and EPS Feather
+
+Adafruit 24 Channel PWM board
+
+Potentiometers
+
+3D-prints
+
+# Centre-Surround Stimulation, Stimulus Movement
+
+It is possible to extend the construction to achieve moving hyperspectral centre-surround stimulation.
+
+The idea behind centre-surround is as follows:
+1. Modulate the stimulation spectrum with a high frequency
+2. Add an ETL (Electric Focus-Tunable Lens) into the post-fibre lightpath
+3. Couple the two to achieve concurrent spot size to spectrum changes
+
+The Arduino software already allows you to do that.
+
+Movement of the stimulus is achieved via a system of spectrally flat mirrors, driven with servomotors.
+1. Add mirrors after the ETL
+2. Done
+
+The Arduino software already allows you to move the stimulus.
+
+Hardware and 3D-prints in respective folder.
